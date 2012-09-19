@@ -1,4 +1,14 @@
 // plist2json / json2plist
+//
+// Clément Wehrung @cwehrung (cwehrung@nurves.com)
+// Adapted from johne: http://stackoverflow.com/questions/6066350/command-line-tool-for-converting-plist-to-json
+//
+// alternatively: plutil -convert json Data.plist
+//
+// usage: FILE_FROM (optional: FILE_TO)
+// recognizes the file format from extension (.plist or .json)
+// if no FILE_TO provided, FILE_TO is FILE_FROM with new file extension
+
 #import <Foundation/Foundation.h>
 #import "JSONKit.h"
 
